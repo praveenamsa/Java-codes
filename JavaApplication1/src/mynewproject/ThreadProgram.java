@@ -1,12 +1,10 @@
 package mynewproject;
 
 public class ThreadProgram extends Thread 
-{
-    
+{    
 	 public static int amount = 2;
 	public static void main(String[] args) 
-	{
-            
+	{ 
 		ThreadProgram tp = new ThreadProgram();
 		//Thread thread = new Thread(tp);
 		tp.start();
@@ -17,9 +15,7 @@ public class ThreadProgram extends Thread
 		}
 		System.out.println(amount);
 		amount++;
-		System.out.println(amount);
-		
-		
+		System.out.println(amount);		
 	}
 	public void run()
 	{
